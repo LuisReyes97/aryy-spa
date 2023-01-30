@@ -47,9 +47,8 @@
       >
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
       <v-spacer />
+      <span> Dr.{{ title }} </span>
       <v-avatar>
       <img
         src="https://cdn-icons-png.flaticon.com/512/194/194915.png"
