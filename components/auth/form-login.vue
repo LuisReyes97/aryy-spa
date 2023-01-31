@@ -31,7 +31,6 @@
                 <v-btn v-on:click="POST_DATA" @click="validate" color="purple" dark>Iniciar sesión</v-btn>
             </div>
         </v-form>
-            
     </v-container>
 </template>
 
