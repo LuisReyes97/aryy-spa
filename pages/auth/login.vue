@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-container no-gutters fluid>
-      <v-row>
-        <v-col cols="12" md="6" fluid>
+      <v-row align="stretch">
+        <v-col class="ocultar-col" cols="12" md="6" fluid>
             <v-card color="primary">ds</v-card>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="6" sm="6" align="center">
             <form-login/>
         </v-col>
       </v-row>
@@ -20,7 +20,19 @@ export default{
   components: { formLogin }, 
   layout: "auth",
   data() {
-    return {};
+    return {
+
+    };
   },
 };
 </script>
+
+<style>
+@media screen and (max-width: 900px) {
+  .ocultar-col{
+    display: none;
+  }
+}
+</style>
+
+

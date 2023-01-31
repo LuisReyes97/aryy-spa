@@ -7,13 +7,6 @@
       fixed
       app
     >
-
-<v-img
-  lazy-src="https://picsum.photos/id/11/10/6"
-  max-height="100"
-  max-width="200"
-  src="https://picsum.photos/id/11/500/300"
-></v-img>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -23,7 +16,7 @@
           exact
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="blue darken-2">{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -48,7 +41,10 @@
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-spacer />
-      <span> Dr.{{ title }} </span>
+      <div>
+        <span>{{ title }} </span>
+      </div>
+
       <v-avatar>
       <img
         src="https://cdn-icons-png.flaticon.com/512/194/194915.png"
