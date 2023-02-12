@@ -14,9 +14,7 @@
         headers: [
           {
             text: 'Nombre completo',
-            align: 'start',
-            sortable: false,
-            value: 'name',
+            value: 'full_name',
           },
           { text: 'Teléfono', value: 'calories' },
           { text: 'Ultima cita', value: 'fat' },

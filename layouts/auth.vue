@@ -1,6 +1,6 @@
 /* layout sin fondo */
 <template>
     <v-app>
-       <Nuxt />
+       <Nuxt/>
     </v-app>
 </template>

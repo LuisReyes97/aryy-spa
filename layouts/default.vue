@@ -41,9 +41,6 @@
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-spacer />
-      <div>
-        <span>{{ title }} </span>
-      </div>
 
       <v-avatar>
       <img

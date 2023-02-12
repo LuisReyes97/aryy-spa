@@ -1,3 +1,4 @@
+/* componente de inicio de sesión */
 <template>
     <v-container>
         <v-form
@@ -5,30 +6,33 @@
          v-model="valid"
          lazy-validation
         >
-            <v-col cols="12" md="8">
-                <v-text-field
-                    v-model="email"
-                    :rules="emailRules"
-                    outlined 
-                    label="Correo" 
-                    dense
-                    required
-                ></v-text-field>
-            </v-col>
-            <v-col cols="12" md="8">
-                <v-text-field
-                    v-model="password"
-                    :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
-                    :rules="[rules.required, rules.min]"
-                    :type="show1 ? 'text' : 'password'"
-                    label="Contraseña"
-                    outlined
-                    @click:append="show1 = !show1"
-                    dense
-                ></v-text-field>
-            </v-col>
+            <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                outlined 
+                label="Correo" 
+                dense
+                required
+            ></v-text-field>
+            <v-text-field
+                v-model="password"
+                :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                :rules="[rules.required, rules.min]"
+                :type="show1 ? 'text' : 'password'"
+                label="Contraseña"
+                outlined
+                @click:append="show1 = !show1"
+                dense
+            ></v-text-field>
             <div>
-                <v-btn v-on:click="POST_DATA" @click="validate" color="purple" dark>Iniciar sesión</v-btn>
+                <v-btn 
+                    v-on:click="POST_DATA" 
+                    @click="validate"  
+                    class="text-capitalize" 
+                    color="purple" 
+                    dark 
+                    block
+                >Iniciar sesión</v-btn>
             </div>
         </v-form>
     </v-container>
@@ -43,14 +47,13 @@ export default{
             password: '',
             valid: true,
             rules: {
-                required: value => !!value || 'contraseña requerida.',
+                required: value => !!value || 'contraseña es obligatorio.',
                 min: v => v.length >= 8 || 'Min 8 characters',
             },
             emailRules: [
-                v => !!v || 'correo requerido',
+                v => !!v || 'correo electrónico es obligatorio',
                 v => /.+@.+\..+/.test(v) || 'correo invalido',
             ],
-
         }
     },
     methods: {
