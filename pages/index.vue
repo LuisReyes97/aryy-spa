@@ -13,14 +13,11 @@
               <v-icon>mdi-flower</v-icon>
               Para Blanquita & Hannyta
             </v-btn> -->
-<!-- 
-          <v-img
-  contain
-  lazy-src="https://pbs.twimg.com/media/EuNGLXvXcAYuE57?format=jpg&name=medium"
-  max-height="350"
-  max-width="381"
-  src="https://pbs.twimg.com/media/EuNGLXvXcAYuE57?format=jpg&name=medium"
-></v-img> -->
+
+<center>
+<img width="350" align="center" justify="center" src="https://i.ibb.co/VgmfF0w/IMG-20220512-223444465.jpg" alt="IMG-20220512-223444465" border="0"> </center>
+<v-spacer></v-spacer>
+
         </v-card>
 
     <v-alert
@@ -29,8 +26,8 @@
       type="error"
       icon="mdi-heart-multiple"
     >
-    No quiero perder nunca nuestra amistad,tal vez no pueda compartir lo mejor del mundo, pero tendrán siempre lo mejor de mí, gracias por compartir una bonita amistad
-    las quiero mucho.
+    No quiero perder nunca nuestra amistad,tal vez no pueda compartirles lo mejor del mundo, pero tendrán siempre lo mejor de mí, gracias por compartir una bonita amistad.
+   las quiero mucho.
     <br>P.D.Luis Reyes
     </v-alert>
  
