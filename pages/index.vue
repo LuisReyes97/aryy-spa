@@ -16,8 +16,8 @@
 
 <center>
 <img width="350" align="center" justify="center" src="https://i.ibb.co/VgmfF0w/IMG-20220512-223444465.jpg" alt="IMG-20220512-223444465" border="0"> </center>
-<v-spacer></v-spacer>
 
+<span> -</span>
         </v-card>
 
     <v-alert
@@ -26,9 +26,9 @@
       type="error"
       icon="mdi-heart-multiple"
     >
-    No quiero perder nunca nuestra amistad,tal vez no pueda compartirles lo mejor del mundo, pero tendrán siempre lo mejor de mí, gracias por compartir una bonita amistad.
-   las quiero mucho.
-    <br>P.D.Luis Reyes
+    Lo más valioso de la vida no es lo que tenemos, si no a quién tenemos.
+    <br>Las quiero mucho 
+    <br>P.D. Luis Reyes
     </v-alert>
  
 
