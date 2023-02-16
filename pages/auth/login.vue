@@ -13,12 +13,12 @@
       <!-- componente formulario login -->
       <v-col cols="12" md="4" sm="8">
         <v-container>
-         
+          <div class="d-flex justify-center align-center">
             <v-img
               :src="require('@/assets/logo/isologo-aryy.svg')"
               max-width="150"
             ></v-img>
-   
+          </div>
           <v-toolbar flat>
             <template v-slot:extension>
               <v-tabs  v-model="tab" centered >
