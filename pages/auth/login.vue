@@ -40,12 +40,17 @@
               </v-card>
             </v-tab-item>
           </v-tabs-items>
-          <v-alert
-  type="success"
->Desarrollo: Luis Reyes |2023</v-alert>
         </v-container>
       </v-col>
     </v-row>
+      <v-footer padless>
+        <v-col
+          class="text-center"
+          cols="12"
+        >
+          {{ new Date().getFullYear() }} — <strong>front end development: Luis Reyes</strong>
+        </v-col>
+      </v-footer>
     </v-app>
 </template>
 
