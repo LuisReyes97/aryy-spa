@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: 'Blanquita & Hannyta',
-    title: 'Blanquita & Hannyta',
+    titleTemplate: 'aryy | test',
+    title: 'Aryy',
     htmlAttrs: {
       lang: 'en'
     },

@@ -26,8 +26,7 @@
             ></v-text-field>
             <div>
                 <v-btn 
-                    v-on:click="POST_DATA" 
-                    @click="validate"  
+                    @click="validate();  POST_DATA();"  
                     class="text-capitalize" 
                     color="purple" 
                     dark 
