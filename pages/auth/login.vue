@@ -13,7 +13,12 @@
       <!-- componente formulario login -->
       <v-col cols="12" md="4" sm="8">
         <v-container>
-          <p>sistema de test</p>
+         
+            <v-img
+              :src="require('@/assets/logo/isologo-aryy.svg')"
+              max-width="150"
+            ></v-img>
+   
           <v-toolbar flat>
             <template v-slot:extension>
               <v-tabs  v-model="tab" centered >
@@ -35,6 +40,9 @@
               </v-card>
             </v-tab-item>
           </v-tabs-items>
+          <v-alert
+  type="success"
+>Desarrollo: Luis Reyes |2023</v-alert>
         </v-container>
       </v-col>
     </v-row>
