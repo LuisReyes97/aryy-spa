@@ -1,8 +1,5 @@
 <template>
-    <v-card>
-        <data-table />
-    </v-card>
-
+    <h2>Ajustes</h2>
 </template>
 <script>
 export default {
@@ -13,5 +10,3 @@ export default {
     },
 }
 </script>
-
-

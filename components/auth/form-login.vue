@@ -66,8 +66,12 @@ export default{
                     password:this.password
                 })
                 .then((response) => {
+                    const token = response.data.access_token
                     localStorage.setItem('token', response.data.data.access_token)
-                    this.$router.push('/')
+                    if(token === response.data.access_token){
+                        this.$store.commit('SET_AUTHENTICATED', true)
+                        this.$router.push('/')
+                    }
                 })
         }
     }

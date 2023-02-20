@@ -9,14 +9,17 @@
     >
       <v-list>
         <v-list-item
+          v-model="model"
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
           router
           exact
+          mandatory
+          color="indigo"
         >
           <v-list-item-action>
-            <v-icon color="blue darken-2">{{ item.icon }}</v-icon>
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -72,6 +75,7 @@
       </v-list>
     </v-navigation-drawer>
   </v-app>
+  
 </template>
 
 <script>
@@ -82,6 +86,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      model: 1,
       items: [
         {
           icon: 'mdi-home',
@@ -91,7 +96,8 @@ export default {
         {
           icon: 'mdi-calendar',
           title: 'Calendario',
-          to: '/inspire'
+          to: '/inspire',
+          padlock:'mdi-lock-outline'
         },
         {
           icon:'mdi-clipboard-list-outline',
@@ -135,7 +141,8 @@ export default {
         },
         {
           icon: 'mdi-cog',
-          title:'Ajustes'
+          title:'Ajustes',
+          to:'/settings'
         },
         {
           icon: 'mdi-login',
