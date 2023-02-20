@@ -35,7 +35,7 @@
                 dense
             ></v-text-field>
             <v-row>
-                <v-col  cols="12" md="4" sm="4">
+                <v-col  cols="4" md="4" sm="4">
                 <v-select
                     v-model="country_code"
                     :items="opciones"
@@ -46,7 +46,7 @@
                     prefix="+"
                 ></v-select>
                 </v-col>
-                <v-col class="mr-0"  cols="12" md="8" sm="8">
+                <v-col class="mr-0"  cols="8" md="8" sm="8">
                     <v-text-field
                         v-model="phone_number"
                         :rules="[() => !!name || 'Número de teléfono es obligatorio.']"

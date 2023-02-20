@@ -7,6 +7,9 @@
       fixed
       app
     >
+      <div class="d-flex align-center justify-center">
+        <img :src="require('@/assets/logo/isologo-aryy.svg')" alt="isologo-aryy" style="max-width: 100px"/>
+      </div>
       <v-list>
         <v-list-item
           v-model="model"
