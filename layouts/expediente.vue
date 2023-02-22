@@ -34,26 +34,9 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-      flat
-    >
-      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.smAndDown" @click.stop="drawer = !drawer , fixed = !fixed"  />
-    
-      <v-spacer />
-
-      <v-avatar>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/194/194915.png"
-        alt="John"
-      >
-    </v-avatar>
-    </v-app-bar>
-    <v-main>
+    <v-main class="grey lighten-3">
       <v-container>
-        <Nuxt />
+        <Nuxt class="grey lighten-3"/>
       </v-container>
     </v-main>
     <v-navigation-drawer
