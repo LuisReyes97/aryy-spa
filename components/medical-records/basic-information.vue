@@ -35,6 +35,14 @@
                     ></v-text-field>
                 </v-col>
                 <v-col cols="12" md="4" sm="4"  class="my-0">
+                    <v-text-field dense outlined prepend-icon="mdi-water">
+                        <template v-slot:append>
+                            <span>bpm</span>
+                        </template>
+                    </v-text-field>
+
+                </v-col>
+                <v-col cols="12" md="4" sm="4"  class="my-0">
                     <v-select
                         dense
                         prepend-icon="mdi-gender-male-female"
