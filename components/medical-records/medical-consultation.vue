@@ -31,6 +31,13 @@
                         dense
                     ></v-text-field>
                 </v-col>
+                <v-col cols="12" md="2" sm="4">
+                    <v-text-field dense outlined prepend-icon="mdi-water">
+                        <template v-slot:append>
+                            <span>bpm</span>
+                        </template>
+                    </v-text-field>
+                </v-col>
             </v-row>
             <v-row>
                 <v-col cols="12">
