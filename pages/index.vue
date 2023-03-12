@@ -10,7 +10,7 @@
     ></v-img>
 
     <v-card-title>
-      Flor de sospo
+      Flor de sospo francisco ochoa
     </v-card-title>
 
     <v-card-subtitle>
@@ -30,6 +30,7 @@
       <v-btn
         icon
         @click="show = !show"
+        ref="https://api.whatsapp.com/send?phone=9612491370"
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
